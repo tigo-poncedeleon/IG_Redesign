@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IG Redesign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+        }
+
+        .container {
+            width: 100%;
+            background: white;
+        }
+
+        .header {
+            padding: 10px;
+            background: white;
+            border-bottom: 1px solid gray;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+
+        .user-info {
+            flex-grow: 1;
+        }
+
+        .user-info h2 {
+            font-size: 18px;
+        }
+
+        .user-info p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .bio {
+            font-size: 20px;
+            color: gray;
+            margin-top: 5px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .icons span {
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            padding: 10px;
+        }
+
+        .grid div {
+            background: gray;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>&larr;</span>
+            <img src="image source" alt="Profile Image">
+            <div class="user-info">
+              <h2>John Doe</h2>
+                <p>Portland, OR</p>
+                <p class="bio">This is my bio. I don’t have much to say.</p>
+            </div>
+            <div class="icons">
+                <span>&#128101;</span>
+                <span>&#128172;</span>
+            </div>
+        </div>
+        <div class="grid">
+            <div></div><div></div><div></div>
+            <div></div><div></div><div></div>
+            <div></div><div></div><div></div>
+        </div>
+    </div>
+</body>
+</html>
+
